@@ -28,7 +28,8 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    ReactION<i className="fab fa-typo3"></i>
+                    RMTech {/*<i className="fab fa-typo3"></i>*/}
+                    <i className="fa-solid fa-code"></i>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'} />

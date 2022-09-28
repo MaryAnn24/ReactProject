@@ -1,0 +1,22 @@
+img.mountain_left{
+    width: 50px;
+    position: absolute;
+    left: 30%;
+    top: 63%;
+    animation: zoom-in-zoom-out 5s infinite;
+}
+
+#root, #mountain_item {overflow: hidden;}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(4);
+      left: -100px; top: 80%;
+      display:none;
+    }
+  }
+
+ 

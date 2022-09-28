@@ -1,6 +1,10 @@
 import React from 'react';
 import './Home.css';
-import Car from '../Car';
+import Car from '../Car/Car';
+import Mountain from '../Mountain/Mountain';
+import ControllerLeft from '../ControllerBox/ControllerLeft';
+import ControllerCenter from '../ControllerBox/ControllerCenter';
+import ControllerRight from '../ControllerBox/ControllerRight';
 
 function Home() {
   return (
@@ -8,7 +12,16 @@ function Home() {
       <div id="game">
           <div id="cloud">
           </div>
+          <div className="mountain_blur"></div>
+          
           <div id="road">
+            <div className="mountain">
+              <Mountain 
+                src='images/mountain_left.png'
+                text='mountain_left'
+                class='mountain_left zoom move'
+              />
+            </div>
             <div id="hero">
               <Car 
                 src='images/cars/car_center.png'
@@ -29,12 +42,11 @@ function Home() {
           <div id="highscore"></div>
         </div> */}
       </div>
-      {/* <div id="controls">
-        <span><span>C</span>insert coin</span>
-        <span><span>M</span>mute</span>
-        <span><span>&lt;</span><span>&gt;</span>move</span>
-        <span><span>&lt;</span><span>&gt;</span>accelerate</span>
-      </div> */}
+      <div className='controller'>
+        <ControllerLeft />
+        <ControllerCenter />
+        <ControllerRight />
+      </div>
       
     </>
   )

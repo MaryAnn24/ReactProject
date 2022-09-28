@@ -19,6 +19,15 @@ height: 98vh;
     height: 72%;
     background-image: url('../../../public/images/sky.png');
     background-size: cover;
+    overflow: hidden;
+}
+
+.mountain_blur {
+    height: 122px;
+    background-image: url('../../../public/images/mountain_fade.png');
+    background-size: cover;
+    width: 100%;
+    margin-top: -130px;
 }
 
 #road {
@@ -29,3 +38,11 @@ height: 98vh;
     margin-top:-1px;
 }
 
+.controller {
+    max-width: 1120px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+}
